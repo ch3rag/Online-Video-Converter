@@ -1,4 +1,4 @@
-node_modules
-.git
-.vs
-DVD
+node_modules/
+.git/
+.vs/
+DVD/
