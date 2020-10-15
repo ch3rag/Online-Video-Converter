@@ -1,0 +1,1034 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.8.27)  20 SEP 2020 18:48
+entering extended mode
+**./documentation.tex
+(documentation.tex
+LaTeX2e <2020-02-02> patch level 5
+L3 programming layer <2020-06-18>
+(C:\Users\Chirag\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
+Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
+(C:\Users\Chirag\AppData\Local\Programs\MiKTeX\tex/latex/base\size11.clo
+File: size11.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
+)
+\c@part=\count167
+\c@section=\count168
+\c@subsection=\count169
+\c@subsubsection=\count170
+\c@paragraph=\count171
+\c@subparagraph=\count172
+\c@figure=\count173
+\c@table=\count174
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen134
+)
+(C:\Users\Chirag\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(C:\Users\Chirag\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks15
+)
+(C:\Users\Chirag\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+
+(C:\Users\Chirag\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+))
+\Gm@cnth=\count175
+\Gm@cntv=\count176
+\c@Gm@tempcnt=\count177
+\Gm@bindingoffset=\dimen135
+\Gm@wd@mp=\dimen136
+\Gm@odd@mp=\dimen137
+\Gm@even@mp=\dimen138
+\Gm@layoutwidth=\dimen139
+\Gm@layoutheight=\dimen140
+\Gm@layouthoffset=\dimen141
+\Gm@layoutvoffset=\dimen142
+\Gm@dimlist=\toks16
+
+(C:\Users\Chirag\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg)
+)
+(C:\Users\Chirag\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\Chirag\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\Chirag\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(C:\Users\Chirag\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.
+cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 105.
+
+(C:\Users\Chirag\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.de
+f
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen143
+\Gin@req@width=\dimen144
+) (C:\Users\Chirag\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
+Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
+\col@sep=\dimen145
+\ar@mcellbox=\box45
+\extrarowheight=\dimen146
+\NC@list=\toks17
+\extratabsurround=\skip49
+\backup@length=\skip50
+\ar@cellbox=\box46
+)
+(C:\Users\Chirag\AppData\Local\Programs\MiKTeX\tex/latex/wrapfig\wrapfig.sty
+\wrapoverhang=\dimen147
+\WF@size=\dimen148
+\c@WF@wrappedlines=\count178
+\WF@box=\box47
+\WF@everypar=\toks18
+Package: wrapfig 2003/01/31  v 3.6
+)
+(C:\Users\Chirag\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty
+\lst@mode=\count179
+\lst@gtempboxa=\box48
+\lst@token=\toks19
+\lst@length=\count180
+\lst@currlwidth=\dimen149
+\lst@column=\count181
+\lst@pos=\count182
+\lst@lostspace=\dimen150
+\lst@width=\dimen151
+\lst@newlines=\count183
+\lst@lineno=\count184
+\lst@maxwidth=\dimen152
+
+(C:\Users\Chirag\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+\c@lstnumber=\count185
+\lst@skipnumbers=\count186
+\lst@framebox=\box49
+)
+(C:\Users\Chirag\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cfg
+File: listings.cfg 2020/03/24 1.8d listings configuration
+))
+Package: listings 2020/03/24 1.8d (Carsten Heinz)
+
+(C:\Users\Chirag\AppData\Local\Programs\MiKTeX\tex/latex/subfiles\subfiles.sty
+Package: subfiles 2020/02/14 v1.6 Multi-file projects (package)
+
+(C:\Users\Chirag\AppData\Local\Programs\MiKTeX\tex/latex/import\import.sty
+Package: import 2020/04/01  v 6.2
+))
+(C:\Users\Chirag\AppData\Local\Programs\MiKTeX\tex/latex/graphics\color.sty
+Package: color 2019/11/23 v1.2a Standard LaTeX Color (DPC)
+
+(C:\Users\Chirag\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 147.
+) (C:\Users\Chirag\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
+Package: caption 2020/05/30 v3.4k Customizing captions (AR)
+(C:\Users\Chirag\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
+Package: caption3 2020/07/20 v1.12b caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 61.
+\captionmargin=\dimen153
+\captionmargin@=\dimen154
+\captionwidth=\dimen155
+\caption@tempdima=\dimen156
+\caption@indent=\dimen157
+\caption@parindent=\dimen158
+\caption@hangindent=\dimen159
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count187
+\c@continuedfloat=\count188
+Package caption Info: listings package is loaded.
+Package caption Info: wrapfig package is loaded.
+) (C:\Users\Chirag\AppData\Local\Programs\MiKTeX\tex/latex/minted\minted.sty
+Package: minted 2017/07/19 v2.5 Yet another Pygments shim for LaTeX
+
+(C:\Users\Chirag\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.st
+y
+Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
+
+(C:\Users\Chirag\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
+Package: ltxcmds 2019/12/15 v1.24 LaTeX kernel commands for general use (HO)
+)
+(C:\Users\Chirag\AppData\Local\Programs\MiKTeX\tex/generic/kvsetkeys\kvsetkeys.
+sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+))
+(C:\Users\Chirag\AppData\Local\Programs\MiKTeX\tex/latex/fvextra\fvextra.sty
+Package: fvextra 2019/02/04 v1.4 fvextra - extensions and patches for fancyvrb
+
+(C:\Users\Chirag\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(C:\Users\Chirag\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
+Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count189
+) (C:\Users\Chirag\AppData\Local\Programs\MiKTeX\tex/latex/fancyvrb\fancyvrb.st
+y
+Package: fancyvrb 2020/05/03 v3.6 verbatim text (tvz,hv)
+\FV@CodeLineNo=\count190
+\FV@InFile=\read2
+\FV@TabBox=\box50
+\c@FancyVerbLine=\count191
+\FV@StepNumber=\count192
+\FV@OutFile=\write3
+) (C:\Users\Chirag\AppData\Local\Programs\MiKTeX\tex/latex/upquote\upquote.sty
+Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
+tim
+) (C:\Users\Chirag\AppData\Local\Programs\MiKTeX\tex/latex/lineno\lineno.sty
+Package: lineno 2005/11/02 line numbers on paragraphs v4.41
+\linenopenalty=\count193
+\output=\toks20
+\linenoprevgraf=\count194
+\linenumbersep=\dimen160
+\linenumberwidth=\dimen161
+\c@linenumber=\count195
+\c@pagewiselinenumber=\count196
+\c@LN@truepage=\count197
+\c@internallinenumber=\count198
+\c@internallinenumbers=\count199
+\quotelinenumbersep=\dimen162
+\bframerule=\dimen163
+\bframesep=\dimen164
+\bframebox=\box51
+LaTeX Info: Redefining \\ on input line 3056.
+)
+\c@FV@TrueTabGroupLevel=\count266
+\c@FV@TrueTabCounter=\count267
+\FV@TabBox@Group=\box52
+\FV@TmpLength=\skip51
+\c@FV@HighlightLinesStart=\count268
+\c@FV@HighlightLinesStop=\count269
+\FV@LoopCount=\count270
+\FV@NCharsBox=\box53
+\FV@BreakIndent=\dimen165
+\FV@BreakIndentNChars=\count271
+\FV@BreakSymbolSepLeft=\dimen166
+\FV@BreakSymbolSepLeftNChars=\count272
+\FV@BreakSymbolSepRight=\dimen167
+\FV@BreakSymbolSepRightNChars=\count273
+\FV@BreakSymbolIndentLeft=\dimen168
+\FV@BreakSymbolIndentLeftNChars=\count274
+\FV@BreakSymbolIndentRight=\dimen169
+\FV@BreakSymbolIndentRightNChars=\count275
+\c@FancyVerbLineBreakLast=\count276
+\FV@LineBox=\box54
+\FV@LineIndentBox=\box55
+\FV@LineWidth=\dimen170
+)
+(C:\Users\Chirag\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count277
+\calc@Bcount=\count278
+\calc@Adimen=\dimen171
+\calc@Bdimen=\dimen172
+\calc@Askip=\skip52
+\calc@Bskip=\skip53
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count279
+\calc@Cskip=\skip54
+)
+(C:\Users\Chirag\AppData\Local\Programs\MiKTeX\tex/latex/tools\shellesc.sty
+Package: shellesc 2019/11/08 v1.0c unified shell escape interface for LaTeX
+Package shellesc Info: Unrestricted shell escape enabled on input line 75.
+)
+(C:\Users\Chirag\AppData\Local\Programs\MiKTeX\tex/latex/ifplatform\ifplatform.
+sty
+Package: ifplatform 2017/10/13 v0.4a Testing for the operating system
+
+(C:\Users\Chirag\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmd
+s.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(C:\Users\Chirag\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.
+sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(C:\Users\Chirag\AppData\Local\Programs\MiKTeX\tex/generic/catchfile\catchfile.
+sty
+Package: catchfile 2019/12/09 v1.8 Catch the contents of a file (HO)
+
+(C:\Users\Chirag\AppData\Local\Programs\MiKTeX\tex/generic/etexcmds\etexcmds.st
+y
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+))
+(C:\Users\Chirag\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifluatex.sty
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+)) (C:\Users\Chirag\AppData\Local\Programs\MiKTeX\tex/latex/xstring\xstring.sty
+
+(C:\Users\Chirag\AppData\Local\Programs\MiKTeX\tex/generic/xstring\xstring.tex
+\integerpart=\count280
+\decimalpart=\count281
+)
+Package: xstring 2019/02/06 v1.83 String manipulations (CT)
+) (C:\Users\Chirag\AppData\Local\Programs\MiKTeX\tex/latex/framed\framed.sty
+Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
+\OuterFrameSep=\skip55
+\fb@frw=\dimen173
+\fb@frh=\dimen174
+\FrameRule=\dimen175
+\FrameSep=\dimen176
+)
+(C:\Users\Chirag\AppData\Local\Programs\MiKTeX\tex/latex/newfloat\newfloat.sty
+Package: newfloat 2019/09/02 v1.1l Defining new floating environments (AR)
+Package newfloat Info: `wrapfig' package detected.
+)
+\minted@appexistsfile=\read3
+\minted@bgbox=\box56
+\minted@code=\write4
+\c@minted@FancyVerbLineTemp=\count282
+\c@minted@pygmentizecounter=\count283
+Package newfloat Info: New float `listing' with options `fileext=lol,placement=
+tbp' on input line 1151.
+\c@listing=\count284
+\newfloat@ftype=\count285
+Package newfloat Info: float type `listing'=8 on input line 1151.
+) (C:\Users\Chirag\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count286
+\float@exts=\toks21
+\float@box=\box57
+\@float@everytoks=\toks22
+\@floatcapt=\box58
+)
+(C:\Users\Chirag\AppData\Local\Programs\MiKTeX\tex/latex/makecell\makecell.sty
+Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
+\rotheadsize=\dimen177
+\c@nlinenum=\count287
+\TeXr@lab=\toks23
+) (C:\Users\Chirag\AppData\Local\Programs\MiKTeX\tex/latex/titlesec\titlesec.st
+y
+Package: titlesec 2019/10/16 v2.13 Sectioning titles
+\ttl@box=\box59
+\beforetitleunit=\skip56
+\aftertitleunit=\skip57
+\ttl@plus=\dimen178
+\ttl@minus=\dimen179
+\ttl@toksa=\toks24
+\titlewidth=\dimen180
+\titlewidthlast=\dimen181
+\titlewidthfirst=\dimen182
+) (C:\Users\Chirag\AppData\Local\Programs\MiKTeX\tex/latex/cinzel\cinzel.sty
+Package: cinzel 2019/10/15 (Bob Tennent) Supports Cinzel and CinzelDecorative f
+or all LaTeX engines.
+
+(C:\Users\Chirag\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifxetex.sty
+Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
+)
+(C:\Users\Chirag\AppData\Local\Programs\MiKTeX\tex/latex/xkeyval\xkeyval.sty
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+
+(C:\Users\Chirag\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkeyval.tex
+(C:\Users\Chirag\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkvutils.tex
+\XKV@toks=\toks25
+\XKV@tempa@toks=\toks26
+)
+\XKV@depth=\count288
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+)) (C:\Users\Chirag\AppData\Local\Programs\MiKTeX\tex/latex/base\textcomp.sty
+Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
+) (C:\Users\Chirag\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
+Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
+)
+(C:\Users\Chirag\AppData\Local\Programs\MiKTeX\tex/latex/fontaxes\fontaxes.sty
+Package: fontaxes 2020/07/21 v1.0e Font selection axes
+LaTeX Info: Redefining \upshape on input line 29.
+LaTeX Info: Redefining \itshape on input line 31.
+LaTeX Info: Redefining \slshape on input line 33.
+LaTeX Info: Redefining \swshape on input line 35.
+LaTeX Info: Redefining \scshape on input line 37.
+LaTeX Info: Redefining \sscshape on input line 39.
+LaTeX Info: Redefining \ulcshape on input line 41.
+LaTeX Info: Redefining \textsw on input line 47.
+LaTeX Info: Redefining \textssc on input line 48.
+LaTeX Info: Redefining \textulc on input line 49.
+))
+(C:\Users\Chirag\AppData\Local\Programs\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
+Package: fancyhdr 2019/01/31 v3.10 Extensive control of page headers and footer
+s
+\f@nch@headwidth=\skip58
+\f@nch@O@elh=\skip59
+\f@nch@O@erh=\skip60
+\f@nch@O@olh=\skip61
+\f@nch@O@orh=\skip62
+\f@nch@O@elf=\skip63
+\f@nch@O@erf=\skip64
+\f@nch@O@olf=\skip65
+\f@nch@O@orf=\skip66
+) (C:\Users\Chirag\AppData\Local\Programs\MiKTeX\tex/latex/xpatch\xpatch.sty
+(C:\Users\Chirag\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
+Package: expl3 2020-06-18 L3 programming layer (loader) 
+
+(C:\Users\Chirag\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pd
+fmode.def
+File: l3backend-pdfmode.def 2020-06-29 L3 backend support: PDF mode
+\l__kernel_color_stack_int=\count289
+\l__pdf_internal_box=\box60
+))
+Package: xpatch 2020/03/25 v0.3a Extending etoolbox patching commands
+
+(C:\Users\Chirag\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xpar
+se.sty
+Package: xparse 2020-05-15 L3 Experimental document command parser
+
+(C:\Users\Chirag\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xpar
+se-generic.tex
+\l__xparse_current_arg_int=\count290
+\g__xparse_grabber_int=\count291
+\l__xparse_m_args_int=\count292
+\l__xparse_v_nesting_int=\count293
+)))
+runsystem(for ^%i in (pygmentize.exe pygmentize.bat pygmentize.cmd) do set > do
+cumentation.aex <nul: /p x=^%~$PATH:i>> documentation.aex)...executed.
+
+runsystem(del documentation.aex)...executed.
+
+ (documentation.aux)
+\openout1 = `documentation.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 138.
+LaTeX Font Info:    ... okay on input line 138.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 138.
+LaTeX Font Info:    ... okay on input line 138.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 138.
+LaTeX Font Info:    ... okay on input line 138.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 138.
+LaTeX Font Info:    ... okay on input line 138.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 138.
+LaTeX Font Info:    ... okay on input line 138.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 138.
+LaTeX Font Info:    ... okay on input line 138.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 138.
+LaTeX Font Info:    ... okay on input line 138.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* bindingoffset: 14.45377pt
+* modes: 
+* h-part:(L,W,R)=(87.459pt, 408.1361pt, 87.45901pt)
+* v-part:(T,H,B)=(71.13188pt, 717.00946pt, 56.9055pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=408.1361pt
+* \textheight=717.00946pt
+* \oddsidemargin=29.64278pt
+* \evensidemargin=15.18901pt
+* \topmargin=-38.1381pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=11.0pt
+* \footskip=30.0pt
+* \marginparwidth=50.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+
+(C:\Users\Chirag\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.m
+kii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count294
+\scratchdimen=\dimen183
+\scratchbox=\box61
+\nofMPsegments=\count295
+\nofMParguments=\count296
+\everyMPshowfont=\toks27
+\MPscratchCnt=\count297
+\MPscratchDim=\dimen184
+\MPnumerator=\count298
+\makeMPintoPDFobject=\count299
+\everyMPtoPDFconversion=\toks28
+)
+(C:\Users\Chirag\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-
+base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+)
+\c@lstlisting=\count300
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
+Package caption Info: End \AtBeginDocument code.
+Package newfloat Info: `float' package detected.
+\c@mv@tabular=\count301
+\c@mv@boldtabular=\count302
+ (sections/0.tex
+
+! LaTeX Error: Environment tikzpicture undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2 		\begin{tikzpicture}
+                         [remember picture,overlay,inner sep=0,outer sep=0]
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Undefined control sequence.
+l.3 		\draw
+           [blue!70!black,line width=4pt] ([xshift=-1.5cm,yshift=-2cm]curren...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (34.24464pt too wide) in paragraph at lines 2--4
+\OT1/cmr/m/n/10.95 ([xshift=-1.5cm,yshift=-2cm]current page.north east) co-or-d
+i-nate (A)--([xshift=1.5cm,yshift=-
+ []
+
+
+Overfull \hbox (24.05498pt too wide) in paragraph at lines 2--4
+\OT1/cmr/m/n/10.95 2cm]current page.north west) coordinate(B)--([xshift=1.5cm,y
+shift=2cm]current page.south
+ []
+
+
+Overfull \hbox (17.97163pt too wide) in paragraph at lines 2--4
+\OT1/cmr/m/n/10.95 west) co-or-di-nate (C)--([xshift=-1.5cm,yshift=2cm]current 
+page.south east) coordinate(D)--
+ []
+
+! Undefined control sequence.
+l.5 		\draw
+            ([yshift=0.5cm,xshift=-0.5cm]A)-- ([yshift=0.5cm,xshift=0.5cm]B)--
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (88.59648pt too wide) in paragraph at lines 5--7
+[]\OT1/cmr/m/n/10.95 ([yshift=0.5cm,xshift=-0.5cm]A)-- ([yshift=0.5cm,xshift=0.
+5cm]B)-- ([yshift=-0.5cm,xshift=0.5cm]B)
+ []
+
+
+Overfull \hbox (81.17772pt too wide) in paragraph at lines 5--7
+\OT1/cmr/m/n/10.95 --([yshift=-0.5cm,xshift=-0.5cm]B)--([yshift=0.5cm,xshift=-0
+.5cm]C)--([yshift=0.5cm,xshift=0.5cm]C)--
+ []
+
+
+Overfull \hbox (33.72763pt too wide) in paragraph at lines 5--7
+\OT1/cmr/m/n/10.95 ([yshift=-0.5cm,xshift=0.5cm]C)-- ([yshift=-0.5cm,xshift=-0.
+5cm]D)--([yshift=0.5cm,xshift=-
+ []
+
+
+Overfull \hbox (7.05217pt too wide) in paragraph at lines 5--7
+\OT1/cmr/m/n/10.95 0.5cm]D)--([yshift=0.5cm,xshift=0.5cm]D)--([yshift=-0.5cm,xs
+hift=0.5cm]A)--([yshift=-
+ []
+
+! Undefined control sequence.
+l.9 		\draw
+            ([yshift=-0.3cm,xshift=0.3cm]A)-- ([yshift=-0.3cm,xshift=-0.3cm]...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (52.85681pt too wide) in paragraph at lines 9--11
+[]\OT1/cmr/m/n/10.95 ([yshift=-0.3cm,xshift=0.3cm]A)-- ([yshift=-0.3cm,xshift=-
+0.3cm]B)-- ([yshift=0.3cm,xshift=-
+ []
+
+
+Overfull \hbox (7.96349pt too wide) in paragraph at lines 9--11
+\OT1/cmr/m/n/10.95 0.3cm]B) --([yshift=0.3cm,xshift=0.3cm]B)--([yshift=-0.3cm,x
+shift=0.3cm]C)--([yshift=-
+ []
+
+
+Overfull \hbox (32.4501pt too wide) in paragraph at lines 9--11
+\OT1/cmr/m/n/10.95 0.3cm,xshift=-0.3cm]C)--([yshift=0.3cm,xshift=-0.3cm]C)-- ([
+yshift=0.3cm,xshift=0.3cm]D)--
+ []
+
+
+Overfull \hbox (31.75055pt too wide) in paragraph at lines 9--11
+\OT1/cmr/m/n/10.95 ([yshift=-0.3cm,xshift=0.3cm]D)--([yshift=-0.3cm,xshift=-0.3
+cm]D)--([yshift=0.3cm,xshift=-
+ []
+
+
+! LaTeX Error: \begin{titlepage} on input line 1 ended by \end{tikzpicture}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.12 		\end{tikzpicture}
+                        
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ì in font cmr10!
+<logo.png, id=1, 513.92pt x 513.92pt>
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package pdftex.def Info: logo.png  used on input line 35.
+(pdftex.def)             Requested size: 170.71652pt x 170.71548pt.
+[1
+
+{C:/Users/Chirag/AppData/Local/MiKTeX/pdftex/config/pdftex.map}] [2 <./logo.png
+>]
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package pdftex.def Info: logo.png  used on input line 46.
+(pdftex.def)             Requested size: 170.71652pt x 170.71548pt.
+ [1]
+
+LaTeX Font Warning: Font shape `OT1/cmr/b/it' undefined
+(Font)              using `OT1/cmr/b/n' instead on input line 87.
+
+[2] [3]
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.147 	\tableofcontents
+                       
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.147 	\tableofcontents
+                       
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+LaTeX Font Info:    Trying to load font information for OT1+Cinzel-LF on input 
+line 147.
+
+(C:\Users\Chirag\AppData\Local\Programs\MiKTeX\tex/latex/cinzel\ot1cinzel-lf.fd
+File: OT1Cinzel-LF.fd 2019/10/15 (autoinst) Font definitions for OT1/Cinzel-LF.
+
+)
+LaTeX Font Info:    Font shape `OT1/Cinzel-LF/b/n' in size <24.88> not availabl
+e
+(Font)              Font shape `OT1/Cinzel-LF/bold/n' tried instead on input li
+ne 147.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.147 	\tableofcontents
+                       
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.147 	\tableofcontents
+                       
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+(documentation.toc
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 2.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 2.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 2.
+ [4])
+\tf@toc=\write5
+\openout5 = `documentation.toc'.
+
+) [5] (sections/1.tex
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+ [1]
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 41.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 41.
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+ [2] [3]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 68.
+ [4] [5] [6]) [7]
+(sections/2.tex
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no Ä in font cmr12!
+Missing character: There is no ô in font cmr12!
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no Ä in font cmr12!
+Missing character: There is no ô in font cmr12!
+ [8]
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no Ä in font cmr12!
+Missing character: There is no ú in font cmr12!
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no Ä in font cmr12!
+Missing character: There is no ù in font cmr12!
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no Ä in font cmr12!
+Missing character: There is no ú in font cmr12!
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no Ä in font cmr12!
+Missing character: There is no ù in font cmr12!
+ [9]) [10] (sections/3.tex) [11] (sections/4.tex
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ì in font cmr10!
+ [12]
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ì in font cmr10!
+
+Overfull \hbox (8.49673pt too wide) in paragraph at lines 67--69
+\OT1/cmr/m/n/10.95 mer-cial pur-poses. So, the de-vel-op-ment cost is neg-li-gi
+-ble. Ba-sic CO-COMO[](Constructive
+ []
+
+[13]
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+
+! Extra }, or forgotten \endgroup.
+l.120 	\egroup
+              
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+[14])
+! Missing } inserted.
+<inserted text> 
+                }
+l.159 		\subfile{sections/4}
+                            
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+[15] (sections/5.tex
+<nodejs.png, id=90, 513.92pt x 513.92pt>
+File: nodejs.png Graphic file (type png)
+<use nodejs.png>
+Package pdftex.def Info: nodejs.png  used on input line 7.
+(pdftex.def)             Requested size: 102.03401pt x 102.02936pt.
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no î in font cmr10!
+<express.png, id=91, 301.125pt x 180.675pt>
+File: express.png Graphic file (type png)
+<use express.png>
+Package pdftex.def Info: express.png  used on input line 21.
+(pdftex.def)             Requested size: 102.03401pt x 61.21915pt.
+<mongo.png, id=92, 1117.17375pt x 301.62688pt>
+File: mongo.png Graphic file (type png)
+<use mongo.png>
+Package pdftex.def Info: mongo.png  used on input line 36.
+(pdftex.def)             Requested size: 102.03401pt x 27.54565pt.
+ [16 <./nodejs.png> <./express.png> <./mongo.png>]
+<feathers.png, id=99, 592.2125pt x 100.375pt>
+File: feathers.png Graphic file (type png)
+<use feathers.png>
+Package pdftex.def Info: feathers.png  used on input line 55.
+(pdftex.def)             Requested size: 102.03401pt x 17.29326pt.
+<feathersuse.png, id=100, 1652.3331pt x 259.2084pt>
+File: feathersuse.png Graphic file (type png)
+<use feathersuse.png>
+Package pdftex.def Info: feathersuse.png  used on input line 64.
+(pdftex.def)             Requested size: 426.79134pt x 66.9496pt.
+
+Overfull \hbox (18.65524pt too wide) in paragraph at lines 64--65
+ [] 
+ []
+
+<ffmpeg.png, id=101, 712.6625pt x 200.75pt>
+File: ffmpeg.png Graphic file (type png)
+<use ffmpeg.png>
+Package pdftex.def Info: ffmpeg.png  used on input line 70.
+(pdftex.def)             Requested size: 102.03401pt x 28.74194pt.
+[17 <./feathers.png> <./feathersuse.png> <./ffmpeg.png>]
+<vue.png, id=108, 301.125pt x 301.125pt>
+File: vue.png Graphic file (type png)
+<use vue.png>
+Package pdftex.def Info: vue.png  used on input line 87.
+(pdftex.def)             Requested size: 81.62596pt x 81.62646pt.
+<vuetify.png, id=109, 197.98969pt x 225.84375pt>
+File: vuetify.png Graphic file (type png)
+<use vuetify.png>
+Package pdftex.def Info: vuetify.png  used on input line 98.
+(pdftex.def)             Requested size: 40.81609pt x 46.55672pt.
+<vuex.png, id=110, 200.75pt x 300.12125pt>
+File: vuex.png Graphic file (type png)
+<use vuex.png>
+Package pdftex.def Info: vuex.png  used on input line 109.
+(pdftex.def)             Requested size: 40.81609pt x 61.01692pt.
+<electron.png, id=111, 164.11313pt x 159.59625pt>
+File: electron.png Graphic file (type png)
+<use electron.png>
+Package pdftex.def Info: electron.png  used on input line 120.
+(pdftex.def)             Requested size: 61.21791pt x 59.53185pt.
+ [18 <./vue.png> <./vuetify.png> <./vuex.png>]) [19 <./electron.png>] (sections
+/6.tex
+Overfull \hbox (9.0184pt too wide) in paragraph at lines 17--26
+ [][] 
+ []
+
+
+Overfull \hbox (24.7286pt too wide) in paragraph at lines 29--40
+ [][] 
+ []
+
+
+Overfull \hbox (62.2172pt too wide) in paragraph at lines 43--61
+ [][] 
+ []
+
+[20]
+Overfull \hbox (18.90378pt too wide) in paragraph at lines 81--94
+ [][] 
+ []
+
+) [21] (sections/7.tex
+<wf.png, id=129, 816.04875pt x 512.91624pt>
+File: wf.png Graphic file (type png)
+<use wf.png>
+Package pdftex.def Info: wf.png  used on input line 8.
+(pdftex.def)             Requested size: 426.79134pt x 268.25197pt.
+
+Overfull \hbox (18.65524pt too wide) in paragraph at lines 8--9
+ [] 
+ []
+
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+[22 <./wf.png>]) [23] (sections/8.tex
+<gc.png, id=137, 599.23875pt x 1106.63437pt>
+File: gc.png Graphic file (type png)
+<use gc.png>
+Package pdftex.def Info: gc.png  used on input line 4.
+(pdftex.def)             Requested size: 227.62204pt x 420.35657pt.
+ [24 <./gc.png>]
+<oval.png, id=143, 200.75pt x 200.75pt>
+File: oval.png Graphic file (type png)
+<use oval.png>
+Package pdftex.def Info: oval.png  used on input line 20.
+(pdftex.def)             Requested size: 56.9055pt x 56.90495pt.
+
+Overfull \hbox (42.67914pt too wide) in paragraph at lines 20--20
+[][] 
+ []
+
+<ds.png, id=144, 129.48375pt x 49.68562pt>
+File: ds.png Graphic file (type png)
+<use ds.png>
+Package pdftex.def Info: ds.png  used on input line 22.
+(pdftex.def)             Requested size: 85.35826pt x 32.75546pt.
+
+Overfull \hbox (56.90552pt too wide) in paragraph at lines 22--22
+[][] 
+ []
+
+<df.png, id=145, 73.77562pt x 21.07875pt>
+File: df.png Graphic file (type png)
+<use df.png>
+Package pdftex.def Info: df.png  used on input line 25.
+(pdftex.def)             Requested size: 85.35826pt x 24.38861pt.
+
+Overfull \hbox (56.90552pt too wide) in paragraph at lines 25--25
+[][] 
+ []
+
+<ee.png, id=146, 71.51718pt x 38.39343pt>
+File: ee.png Graphic file (type png)
+<use ee.png>
+Package pdftex.def Info: ee.png  used on input line 29.
+(pdftex.def)             Requested size: 56.9055pt x 30.54956pt.
+
+Overfull \hbox (45.95547pt too wide) in paragraph at lines 29--29
+[][] 
+ []
+
+
+Overfull \hbox (17.60388pt too wide) in paragraph at lines 16--33
+ [] 
+ []
+
+[25 <./oval.png> <./ds.png> <./df.png> <./ee.png>]
+<ctx.png, id=154, 691.08188pt x 431.81325pt>
+File: ctx.png Graphic file (type png)
+<use ctx.png>
+Package pdftex.def Info: ctx.png  used on input line 38.
+(pdftex.def)             Requested size: 682.86613pt x 426.68599pt.
+
+Overfull \hbox (18.5499pt too wide) in paragraph at lines 38--39
+ [] 
+ []
+
+[26 <./ctx.png>]
+<dfd.png, id=158, 741.67087pt x 513.117pt>
+File: dfd.png Graphic file (type png)
+<use dfd.png>
+Package pdftex.def Info: dfd.png  used on input line 43.
+(pdftex.def)             Requested size: 711.3189pt x 492.14044pt.
+
+Overfull \hbox (84.00435pt too wide) in paragraph at lines 43--44
+ [] 
+ []
+
+
+Overfull \vbox (26.9813pt too high) has occurred while \output is active []
+
+
+[27 <./dfd.png>]
+<121.png, id=162, 451.6875pt x 90.3375pt>
+File: 121.png Graphic file (type png)
+<use 121.png>
+Package pdftex.def Info: 121.png  used on input line 76.
+(pdftex.def)             Requested size: 398.33858pt x 79.67229pt.
+
+Overfull \hbox (62.14406pt too wide) in paragraph at lines 76--78
+[][] 
+ []
+
+<m21.png, id=163, 451.6875pt x 90.3375pt>
+File: m21.png Graphic file (type png)
+<use m21.png>
+Package pdftex.def Info: m21.png  used on input line 81.
+(pdftex.def)             Requested size: 398.33858pt x 79.67229pt.
+
+Overfull \hbox (62.14406pt too wide) in paragraph at lines 81--83
+[][] 
+ []
+
+[28 <./121.png>]
+<m2m.png, id=167, 451.6875pt x 90.3375pt>
+File: m2m.png Graphic file (type png)
+<use m2m.png>
+Package pdftex.def Info: m2m.png  used on input line 86.
+(pdftex.def)             Requested size: 398.33858pt x 79.67229pt.
+
+Overfull \hbox (62.14406pt too wide) in paragraph at lines 86--87
+[][] 
+ []
+
+[29 <./m21.png> <./m2m.png>]
+<er.png, id=171, 1311.39937pt x 740.7675pt>
+File: er.png Graphic file (type png)
+<use er.png>
+Package pdftex.def Info: er.png  used on input line 92.
+(pdftex.def)             Requested size: 711.3189pt x 401.8057pt.
+) [30 <./er.png>] (sections/9.tex
+<dirclient.png, id=176, 180.675pt x 651.93562pt>
+File: dirclient.png Graphic file (type png)
+<use dirclient.png>
+Package pdftex.def Info: dirclient.png  used on input line 7.
+(pdftex.def)             Requested size: 113.81102pt x 410.67188pt.
+<dirSer.png, id=177, 217.5628pt x 1135.99406pt>
+File: dirSer.png Graphic file (type png)
+<use dirSer.png>
+Package pdftex.def Info: dirSer.png  used on input line 7.
+(pdftex.def)             Requested size: 99.58464pt x 519.98088pt.
+
+Overfull \hbox (0.37608pt too wide) in paragraph at lines 4--9
+ [] 
+ []
+
+[31 <./dirclient.png> <./dirSer.png>]
+runsystem(pygmentize -S default -f latex -P commandprefix=PYG > documentation.o
+ut.pyg)...executed.
+
+ (documentation.out.pyg)
+runsystem(pygmentize -S default -f latex -P comma

@@ -1,0 +1,133 @@
+\section{Development \& Coding}
+		\subsection{Directory Structure}
+		\begin{center}
+		\begin{tabular}{ m{6.5cm} | m{7cm} }
+				\textbf{\large Client-Side Directory Structure} &	\textbf{\large Server-Side Directory Structure} \\
+				\hline				\hline
+				\vspace{-0cm}\includegraphics[width=4cm]{dirclient.png} &	\vs[0.1]\includegraphics[width=3.5cm]{dirSer.png} \\
+		\end{tabular}
+	\end{center}
+			\subsection{Client-Side Code}
+	\colorboxaligner
+	
+	% ROOT
+	\code{/vue.config.js}{js}
+	\code{/package.json}{json}
+	\code{/babel.config.js}{js}
+	\code{/.env}{text}
+	
+	% PUBLIC
+	\code{/public/index.html}{html}
+	
+	% SRC
+	\code{/src/main.js}{js}		
+	\code{/src/feathers-vuex.js}{js}		
+	\code{/src/feathers-client.js}{js}		
+	\code{/src/App.vue}{html}		
+	\code{/src/background.js}{js}		
+	
+	% COMPONENTS
+	\code{/src/components/Dialog.vue}{html}				
+	\code{/src/components/Loading.vue}{html}				
+	\code{/src/components/YesNoDialog.vue}{html}				
+	
+	% PLUGINS
+	\code{/src/plugins/vuetify.js}{js}				
+	
+	% ROUTER
+	\code{/src/router/index.js}{js}				
+	
+	% STORE
+	\code{/src/store/index.js}{js}						
+	\code{/src/store/store.auth.js}{js}						
+	
+	% STORE SERVICES		
+	\code{/src/store/services/authmanagement.js}{js}						
+	\code{/src/store/services/convert.js}{js}						
+	\code{/src/store/services/thumbs.js}{js}						
+	\code{/src/store/services/uploads.js}{js}						
+	\code{/src/store/services/users.js}{js}						
+	
+	% VIEWS
+	\code{/src/views/Account.vue}{html}								
+	\code{/src/views/ConversionHistory.vue}{html}		
+	\code{/src/views/Login.vue}{html}	
+	\code{/src/views/Reset.vue}{html}	
+	\code{/src/views/SignUp.vue}{html}	
+	\code{/src/views/Verify.vue}{html}	
+	\code{/src/views/Videos.vue}{html}	
+	\vs
+	\subsection{Server-Side Code}
+	
+	\renewcommand{\rootName}{D:/Online-Video-Converter/video-converter-server}
+	\colorboxaligner
+	
+	% ROOT
+	\code{/package.json}{json}
+	
+	% SRC
+	\code{/src/app.js}{js}
+	\code{/src/app.hooks.js}{js}
+	\code{/src/authentication.js}{js}
+	\code{/src/channels.js}{js}
+	\code{/src/index.js}{js}
+	\code{/src/logger.js}{js}
+	\code{/src/mongodb.js}{js}
+	\code{/src/mongoose.js}{js}
+	
+	% HOOKS
+	\code{/src/hooks/attachThumb.js}{js}		
+	\code{/src/hooks/findFiles.js}{js}		
+	\code{/src/hooks/processConvert.js}{js}		
+	\code{/src/hooks/processFile.js}{js}		
+	\code{/src/hooks/sendVerificationEmail.js}{js}		
+	
+	% MIDDLEWARE
+	\code{/src/middleware/index.js}{js}		
+	
+	% MODELS		
+	\code{/src/models/convert.model.js}{js}				
+	\code{/src/models/uploads.model.js}{js}		
+	\code{/src/models/users.model.js}{js}		
+	
+	% SERVICES
+	
+	\code{/src/services/index.js}{js}				
+	
+	\code{/src/services/authManagement/authmanagement.hooks.js}{js}				
+	\code{/src/services/authManagement/authmanagement.service.js}{js}				
+	\code{/src/services/authManagement/notifier.js}{js}				
+	
+	\code{/src/services/convert/convert.hooks.js}{js}				
+	\code{/src/services/convert/convert.service.js}{js}				
+	\code{/src/services/convert/convert.class.js}{js}				
+	
+	\code{/src/services/message/message.hooks.js}{js}				
+	\code{/src/services/message/message.service.js}{js}			
+	
+	\code{/src/services/streams/streams.hooks.js}{js}				
+	\code{/src/services/streams/streams.service.js}{js}						
+	
+	\code{/src/services/thumbs/thumbs.hooks.js}{js}				
+	\code{/src/services/thumbs/thumbs.service.js}{js}				
+	\code{/src/services/thumbs/thumbs.class.js}{js}				
+	
+	\code{/src/services/uploads/uploads.hooks.js}{js}				
+	\code{/src/services/uploads/uploads.service.js}{js}				
+	\code{/src/services/uploads/uploads.class.js}{js}				
+	
+	\code{/src/services/users/users.hooks.js}{js}				
+	\code{/src/services/users/users.service.js}{js}				
+	\code{/src/services/users/users.class.js}{js}	
+	
+	% TEST
+	\code{/test/app.test.js}{js}									
+	\code{/test/authentication.test.js}{js}									
+	
+	\code{/test/services/authmanagement.test.js}{js}									
+	\code{/test/services/convert.test.js}{js}									
+	\code{/test/services/message.test.js}{js}
+	\code{/test/services/streams.test.js}{js}
+	\code{/test/services/thumbs.test.js}{js}
+	\code{/test/services/uploads.test.js}{js}
+	\code{/test/services/users.test.js}{js}

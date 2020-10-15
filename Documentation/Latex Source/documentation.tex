@@ -1,0 +1,211 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[a4paper, top=2.5cm, bottom=2cm,  bindingoffset=0.2in]{geometry}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{wrapfig}
+\usepackage{listings}
+\usepackage{subfiles}
+\usepackage{color}
+\usepackage{caption}
+\usepackage[cache=false, newfloat]{minted}
+\usepackage{float}
+\usepackage{makecell}
+\UseRawInputEncoding
+
+\RequirePackage[calcwidth]{titlesec}
+
+\pagestyle{myheadings}
+
+
+\RequirePackage[calcwidth]{titlesec}
+\RequirePackage{color}
+
+\definecolor{seccol}{rgb}{0, 0, 0}
+\usepackage{cinzel}
+
+\titleformat{\section}[hang]{\bfseries}
+{\color{white}\Huge\colorbox{gray}{\makebox(58, 58){\strut\thesection}}}{0pt}{\linebreak\linebreak\Huge\raggedleft\cinzel}[{\titlerule[0.5pt]}]
+
+\titleformat{\subsection}[hang]{\sffamily\bfseries}
+{\color{gray}\Large\thesubsection}{0pt}{\large\ }[{\titlerule[0.5pt]}]
+
+
+\usepackage{fancyhdr}
+
+
+
+\newcommand{\sir}{Mr. Rinku Raheja}
+\newcommand{\me}{Bharat Singh Rajput}
+\newcommand{\id}{717042}
+\newcommand{\projectname}{Online Video Converter}
+\newcommand{\degree}{Bachelor Of Computer Application}
+\newcommand{\college}{National Post Graduate College}
+\newcommand{\dept}{Department Of Computer Science}
+\newcommand{\hod}{Dr. Shalini Lamba}
+\newcommand{\logo}[1][6]{\includegraphics[width=#1cm]{logo.png}}
+\newcommand{\vs}[1][0.5]{\par \vspace{#1cm}}
+\newcommand{\fileName}{/vue.config.js}
+
+\makeatletter
+\DeclareRobustCommand{\filename}[1]{%
+	\begingroup
+	\def\textendash{-}%
+	\filename@parse{#1}%
+	\edef\filename@base{\detokenize\expandafter{\filename@base}}%
+	\texttt{\filename@base.\filename@ext}%
+	\endgroup
+}
+\makeatother
+
+\definecolor{gray}{rgb}{.4,.4,.4}
+\definecolor{darkgray}{rgb}{.4,.4,.4}
+\definecolor{purple}{rgb}{0.65, 0.12, 0.82}
+\definecolor{ao}{rgb}{0.0, 0.0, 1.0}
+
+
+\DeclareCaptionFont{white}{\color{white}}
+\DeclareCaptionFormat{listing}{\colorbox{gray}{\parbox{\textwidth}{#1#2#3}}}
+\captionsetup[lstlisting]{format=listing,labelfont=white,textfont=white, position=top}
+
+\newcommand{\rootName}{D:/Online-Video-Converter/video-converter-client}
+
+\newcommand{\code}[2]{	
+\hspace{-40pt}\colorbox{gray}{\parbox{\textwidth}{\textcolor{white}{\texttt{#1}}}}
+	\vs[0.2]
+	\inputminted[tabsize=2,linenos, fontsize=\fontsize{9}{13}\selectfont]{#2}{"\rootName#1"}
+}
+
+
+\renewcommand{\theFancyVerbLine}{{\arabic{FancyVerbLine}}}
+\newcommand{\colorboxaligner}{	
+	\hspace{-40pt}\colorbox{white}{\parbox{\textwidth}{\textcolor{white}{\texttt{\ }}}}
+	\vs[0.2]
+}
+
+\newcommand{\img}[3]{%
+	\begin{figure}[H]
+		\includegraphics[width=#2cm]{#1}
+		\caption*{\texttt{\textbf{#3}}}
+	\end{figure}
+}
+
+\lstdefinelanguage{JavaScript}{
+	keywords={typeof, new, true, false, catch, function, return, null, catch, switch, var, if, in, while, do, else, case, break, module, exports},
+	keywordstyle=\color{blue}\bfseries,
+	ndkeywords={class, export, boolean, throw, implements, import, this},
+	ndkeywordstyle=\color{darkgray}\bfseries,
+	identifierstyle=\color{black},
+	sensitive=false,
+	comment=[l]{//},
+	morecomment=[s]{/*}{*/},
+	commentstyle=\color{purple}\ttfamily,
+	stringstyle=\color{red}\ttfamily,
+	morestring=[b]',
+	morestring=[b]",
+}
+\lstset{
+	language=JavaScript,
+	backgroundcolor=\color{white},
+	extendedchars=true,
+	basicstyle=\footnotesize\ttfamily,
+	showstringspaces=false,
+	showspaces=false,
+	numbers=left,
+	numberstyle=\footnotesize,
+	numbersep=9pt,
+	tabsize=2,
+	breaklines=true,
+	showtabs=false,
+	captionpos=b
+}
+
+\setminted[python]{
+	linenos=true,
+	breaklines=true,
+	encoding=utf8,
+	fontsize=\footnotesize,
+	frame=lines
+}
+\usepackage{etoolbox,xpatch}
+
+\makeatletter
+\AtBeginEnvironment{minted}{\dontdofcolorbox}
+\def\dontdofcolorbox{\renewcommand\fcolorbox[4][]{##4}}
+\xpatchcmd{\inputminted}{\minted@fvset}{\minted@fvset\dontdofcolorbox}{}{}
+\xpatchcmd{\mintinline}{\minted@fvset}{\minted@fvset\dontdofcolorbox}{}{} % see https://tex.stackexchange.com/a/401250/
+\makeatother
+
+\begin{document}
+		\pagenumbering{gobble}
+		\subfile{sections/0}
+		\setlength{\headheight}{15.2pt}
+		
+		\pagestyle{fancy}
+		\lhead{\fancyplain{}{}}
+		\rhead{ \fancyplain{}{\rightmark} }
+		\rfoot{ \fancyplain{}{Page \thepage} }
+		\cfoot{ \fancyplain{}{} }
+		
+		\renewcommand{\headrulewidth}{2pt}
+		\renewcommand{\footrulewidth}{1pt}
+		
+		\pagenumbering{arabic}
+		\subfile{sections/1}
+		\newpage
+		\subfile{sections/2}
+		\pagebreak
+		\subfile{sections/3}
+		\pagebreak
+		\subfile{sections/4}
+		\vfill
+ 		\pagebreak
+ 		\subfile{sections/5}
+ 		\pagebreak
+		\subfile{sections/6}
+ 		\pagebreak
+		\subfile{sections/7}
+ 		\pagebreak
+		\subfile{sections/8}
+ 		\pagebreak
+		\subfile{sections/9}
+ 		\pagebreak
+		\section{Screenshots}\
+			\img{ss1.jpeg}{16.3}{Login Page}
+			\vfill
+			\img{ss2.jpeg}{16.3}{Sign Up Page}
+			\img{ss3.jpeg}{16.3}{Forgot Password Page}
+			\img{ss4.jpeg}{16.3}{Sign Up Validation}
+			\img{ss5.jpeg}{16.3}{Sign Up Confirmation}
+			\img{ss6.png}{16.3}{Sign Up Confirmation}
+			\img{ss7.jpeg}{16.3}{Log In Validation}
+			\img{ss8.jpeg}{16.3}{Log In Without Verification}
+			\img{ss9.jpeg}{16.3}{User Verification}
+			\img{ss10.jpeg}{16.3}{User Account}
+			\img{ss11.jpeg}{16.3}{Edit User Account}
+			\img{ss12.png}{16.3}{Reset Password Email}
+			\img{ss13.jpeg}{16.3}{Reset Password Landing Page}
+			\img{ss14.jpeg}{16.3}{User Videos List View}
+			\img{ss15.jpeg}{16.3}{User Videos Card View}
+			\img{ss16.jpeg}{16.3}{Video Information}
+			\img{ss17.jpeg}{16.3}{Video Streaming}
+			\img{ss18.jpeg}{16.3}{Upload New Video}
+			\img{ss19.jpeg}{16.3}{Video To Video Conversion}
+			\img{ss20.jpeg}{16.3}{Video To Audio Conversion}
+			\img{ss21.png}{16.3}{Converted Files Are Downloaded Automatically}
+			\img{ss22.jpeg}{16.3}{User Conversion History List View}
+			\img{ss23.jpeg}{16.3}{User Conversion History Card View}
+			\img{ss24.jpeg}{16.3}{Converted Video Information}
+\renewcommand{\img}[3]{%
+	\begin{figure}[H]
+		\includegraphics[width=#2cm, trim={0 1cm 0 0},clip]{#1}
+		\caption*{\texttt{\textbf{#3}}}
+	\end{figure}
+}
+			\img{ss25.png}{16.3}{Native Desktop Application}
+			\img{ss26.png}{16.3}{Native Desktop Application}
+			\img{ss27.png}{16.3}{Native Desktop Application}
+			 		\pagebreak
+		\subfile{sections/10}		
+
+
+\end{document}	

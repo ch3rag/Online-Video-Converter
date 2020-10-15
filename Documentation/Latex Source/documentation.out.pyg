@@ -1,0 +1,18 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+   \PYG{p}{\PYGZlt{}}\PYG{n+nt}{template}\PYG{p}{\PYGZgt{}}
+  \PYG{p}{\PYGZlt{}}\PYG{n+nt}{v\PYGZhy{}dialog} \PYG{n+na}{v\PYGZhy{}model}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}config.show\PYGZdq{}} \PYG{n+na}{width}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}400\PYGZdq{}} \PYG{n+na}{:persistent}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}config.isPersistent\PYGZdq{}} \PYG{n+na}{hide\PYGZhy{}overlay}\PYG{p}{\PYGZgt{}}
+    \PYG{p}{\PYGZlt{}}\PYG{n+nt}{v\PYGZhy{}card} \PYG{n+na}{class}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}mx\PYGZhy{}auto\PYGZdq{}} \PYG{n+na}{loading} \PYG{n+na}{disabled}\PYG{p}{\PYGZgt{}}
+      \PYG{p}{\PYGZlt{}}\PYG{n+nt}{v\PYGZhy{}card\PYGZhy{}title}\PYG{p}{\PYGZgt{}}Hold on..\PYG{p}{\PYGZlt{}/}\PYG{n+nt}{v\PYGZhy{}card\PYGZhy{}title}\PYG{p}{\PYGZgt{}}
+      \PYG{p}{\PYGZlt{}}\PYG{n+nt}{v\PYGZhy{}card\PYGZhy{}text}\PYG{p}{\PYGZgt{}}\PYGZob{}\PYGZob{}config.message\PYGZcb{}\PYGZcb{}\PYG{p}{\PYGZlt{}/}\PYG{n+nt}{v\PYGZhy{}card\PYGZhy{}text}\PYG{p}{\PYGZgt{}}
+    \PYG{p}{\PYGZlt{}/}\PYG{n+nt}{v\PYGZhy{}card}\PYG{p}{\PYGZgt{}}
+  \PYG{p}{\PYGZlt{}/}\PYG{n+nt}{v\PYGZhy{}dialog}\PYG{p}{\PYGZgt{}}
+\PYG{p}{\PYGZlt{}/}\PYG{n+nt}{template}\PYG{p}{\PYGZgt{}}
+
+\PYG{p}{\PYGZlt{}}\PYG{n+nt}{script}\PYG{p}{\PYGZgt{}}
+\PYG{k+kr}{export} \PYG{k}{default} \PYG{p}{\PYGZob{}}
+	\PYG{n+nx}{props}\PYG{o}{:} \PYG{p}{[}
+		\PYG{l+s+s1}{\PYGZsq{}config\PYGZsq{}}\PYG{p}{,}
+	\PYG{p}{],}
+\PYG{p}{\PYGZcb{};}
+\PYG{p}{\PYGZlt{}/}\PYG{n+nt}{script}\PYG{p}{\PYGZgt{}}
+\end{Verbatim}

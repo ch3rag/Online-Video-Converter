@@ -1,0 +1,432 @@
+\section{Implementation}
+		\vs
+		Implementation or execution in any project is done when the project planning is complete as detailed as possible. In this phase, it monitors everything that could jeopardize the project or part of it in other words the theory is being tested by the implementation to make sure the data in the system changes according to the plan. To keep track of the project plan and keep ourselves in control all the tools and steps involved are applied by the project manager. 
+		\vs
+		Steps in which all the tools are used: 
+		\begin{itemize}
+			\item Take action according to plan. 
+			\item Record and document all the work, changes and results.
+			\item Analyze the result of action or changes made according to the plan. 
+		\end{itemize}
+		\vs
+		The steps involved here in this particular phase are: 
+		\vs
+		\begin{itemize}
+			\item Installation of Hardware and Software 
+			\item Conversion of Data 
+			\item System Training 
+			\item Documentation of the System
+		\end{itemize}
+		\vs
+		\subsection{Web Deployment}
+		\vs
+		\subsubsection{Application Deployement}
+			Once your site is finished (or finished "enough" to start public testing) you're going to need to host it somewhere more public and accessible than your personal development computer.
+			
+			Up to now, you've been working in a development environment, using Express/Node as a web server to share your site to the local browser/network, and running your website with (insecure) development settings that expose debugging and other private information. Before you can host a website externally you're first going to have to:
+			
+			\begin{itemize}
+			\item Choose an environment for hosting the Express app.
+			\item Make a few changes to your project settings.
+			\item Set up a production-level infrastructure for serving your website.
+			\end{itemize}
+			\subsubsection{Building node.js Application}
+Once our application is ready to reach the masses, we can set up our production environment. Sensitive information such as API Tokens is not included in the build package. Such information is passed using environment variables that are assigned in the production environment. Once all the configuration is completed we can build our using application by invoking the build script. 
+
+Some build tools used in this project are: 
+\vs
+\textbf{Babel}
+
+Babel is a javascript compiler that compiles the lastest javascript syntax to cross-browser compatible javascript code.
+\vs
+\textbf{Webpack}
+
+Webpack is used to combine all the javascript code and CSS stying into a single file. This file contains all the minified code having a small file to increase the loading times. 
+\vs
+\begin{minted}[fontsize=\footnotesize, tabsize=2]{shell}
+$> D:\Online-Video-Converter\video-converter-client> npm run build > build.sh  
+
+> video-converter-client@0.1.0 build D:\Online-Video-Converter\video-converter-client
+> vue-cli-service build
+
+File                                   Size              Gzipped
+
+dist\js\chunk-vendors.6876a285.js      808.43 KiB        232.82 KiB
+dist\js\app.06184edb.js                73.84 KiB         16.02 KiB
+dist\css\chunk-vendors.297ad542.css    461.03 KiB        53.48 KiB
+dist\css\app.95238005.css              1.06 KiB          0.39 KiB
+
+Images and other types of assets omitted.
+
+DONE  Build complete. The dist directory is ready to be deployed.
+INFO  Check out deployment instructions at https://cli.vuejs.org/guide/deployment.html
+\end{minted}
+
+\subsubsection{Deployment Using Vercel}
+​Vercel is a cloud platform for static sites and Serverless Functions that fits perfectly with your workflow. It enables developers to host Jamstack websites and web services that deploy instantly, scale automatically, and requires no supervision, all with no configuration.
+
+\begin{minted}[fontsize=\footnotesize, tabsize=2]{shell}
+PS D:\Online-Video-Converter\video-converter-client\dist> now --public
+> UPDATE AVAILABLE Run `npm i -g now@latest` to install Now CLI 20.1.0
+> Changelog: https://github.com/zeit/now/releases/tag/now@20.1.0
+> NOTE: Deploying to Now 2.0 automatically. More: https://zeit.co/docs/version-detection
+> Deploying D:\Online-Video-Converter\video-converter-client\dist under iambharatsingh
+> Using project dist
+> NOTE: Deployed to production. Run `vercel --prod` to overwrite later (https://vercel.link/2F).
+> Synced 9 files [8s]
+> https://dist-7p6y0y821.vercel.app [8s]
+> Ready! Deployment complete [17s]
+- https://dist-one-dun.vercel.app
+- https://dist.iambharatsingh.vercel.app [in clipboard]
+PS D:\Online-Video-Converter\video-converter-client\dist>
+\end{minted}
+\subsection{Native Desktop Application Deployment}		
+\begin{minted}[fontsize=\footnotesize, tabsize=2]{shell}
+PS D:\Online-Video-Converter\video-converter-client> npm run electron:build
+
+> video-converter-client@0.1.0 electron:build D:\Online-Video-Converter\video-converter-client
+> vue-cli-service electron:build
+
+INFO  Bundling render process:
+
+/  Building modern bundle for production...
+
+File                                                    Size                                                                           Gzipped
+
+dist_electron\bundled\js\chunk-vendors.6a8d652d.js      722.09 KiB                                                                     207.93 KiB
+dist_electron\bundled\js\app.538557c5.js                69.76 KiB                                                                      14.71 KiB
+dist_electron\bundled\css\chunk-vendors.297ad542.css    461.03 KiB                                                                     53.48 KiB
+dist_electron\bundled\css\app.8f4add8e.css              1.06 KiB                                                                       0.39 KiB
+
+Images and other types of assets omitted.
+
+DONE  Build complete. The dist_electron\bundled directory is ready to be deployed.
+INFO  Check out deployment instructions at https://cli.vuejs.org/guide/deployment.html
+
+-  Bundling main process...
+
+DONE  Compiled successfully in 5837ms                                                                                                                                                                          1:09:23 PM
+File                                   Size                                                                                   Gzipped  
+
+dist_electron\bundled\background.js    191.48 KiB                                                                             59.16 KiB
+
+Images and other types of assets omitted.
+
+• electron-builder  version=22.8.1 os=10.0.18363
+• description is missed in the package.json  appPackageFile=\dist_electron\bundled\package.json
+• author is missed in the package.json  appPackageFile=\dist_electron\bundled\package.json
+• writing effective config  file=dist_electron\builder-effective-config.yaml
+• packaging       platform=win32 arch=x64 electron=9.3.1 appOutDir=dist_electron\win-unpacked
+• downloading     url=https://github.com/electron/electron/.../v9.3.1/electron-v9.3.1-win32-x64.zip
+• downloaded      url=https://github.com/electron/.../v9.3.1/electron-v9.3.1-win32-x64.zip
+• default Electron icon is used  reason=application icon is not set
+• downloading     url=https://github.com/electron-userland/.../winCodeSign-2.6.0/winCodeSign-2.6.0.7z
+• downloaded      url=https://github.com/electron-userland/.../winCodeSign-2.6.0/winCodeSign-2.6.0.7z
+• building        target=nsis file=dist_electron\video-converter-client Setup 0.1.0.exe archs=x64
+• downloading     url=https://github.com/electron-userland/.../nsis-3.0.4.1.7z
+• downloaded      url=https://github.com/electron-userland/.../nsis-3.0.4.1.7z
+• downloading     url=https://github.com/electron-userland/.../nsis-resources-3.4.1.7z
+• downloaded      url=https://github.com/electron-userland/.../nsis-resources-3.4.1.7z
+• building block map  blockMapFile=dist_electron\video-converter-client Setup 0.1.0.exe.blockmap
+DONE  Build complete!
+\end{minted}
+		\subsection{Installation of Hardware and Software}
+		\hspace{1cm}Before implementation of the hardware and the software required for debugging the system should be made fully operative so that the translation can occur smoothly which is one of the most critical and costly activities in the system development life cycle.
+		
+		\subsection{Conversion of Data}
+		\hspace{1cm}As the old system is converted into a new system similarly the data from the old system should also be converted to run in the new system within new format. I this step the recovery procedures are needed to be fully defined and also the database is configured with security. .
+		
+		\subsection{System Training}
+		\hspace{1cm}All the programs of the system are loaded onto the computer systems of the user during this step. After loading the system we check by whether the project is under the control of the user and works according to the plan. To confirm the above sentence we need to complete the following steps: 
+		\begin{itemize}
+			\item To execute the package
+			\item To pass the data
+			\item To process the data
+			\item To take out the reports/records
+		\end{itemize}
+		\pagebreak
+		\section{Testing}
+		\vs
+		The testing phase is very important for a successful system. In this phase before implementing the new system into operation, for eliminating bugs a test run of the system is done. After completing codes for the whole programs of the system, a test plan should be developed and run one given set of test data. 
+		\vs
+		Using the test data subsequent test run is carried out: 
+		\vs
+		\begin{itemize}
+			\item \subsection{Unit Testing}
+			It is a method by which individual units of source code, sets of one or more program modules collectively with associated control data, usage procedures, and operating procedures, are tested to determine whether they are fit for use. Intuitively, one can view a unit as the smallest testable part of an application. In procedural programming, a unit can be an entire module but is more commonly an individual function. In object-oriented programming, a unit is an entire interface but could be an individual method. A unit test is created by programmers or by white box testers during the development process. 
+			
+			\vs
+			
+			Each test case is independent of the others: substitutes like method stubs, mock objects can be used to assist testing a module in isolation. Unit tests are typically written and run by software developers to ensure that code meets its design and behaves as intended. Its implementation can vary from being very manual to being formalized as part of build automation. 
+			
+			\item \subsection{Integration Testing}
+			It is the phase in software testing in which individual software modules are combined and tested as a group. It occurs after unit testing and before validation testing. Integration testing takes as its input modules that have been unit tested, groups them in larger aggregates, applies tests defined in an integration test plan to those aggregates, and delivers as its output the integrated system ready for system testing. 
+			
+			\item \subsection{Program Testing}
+			After the programs have been coded, compiled, and carried out to working conditions, they must be independently tested with the prepared test data. Any unwanted happening should be noted and debugged. 
+			
+			\item \subsection{System Testing}
+			When the program test for each of the programs of the system is written and errors are removed then the system test is complete. At this stage, the test is done on actual data. The complete system is put into execution on the actual data. At every stage of the execution, the output of the system is studied. During the outcome analysis, it may be found that the outputs are not matching the estimated output of the system. In such a situation, the bugs or errors in the particular programs are recognized and are fixed and further verified for the expected output. When it is confirmed that the system is running error-free, the users are called with their real data so that the system could be presented running as per their requirements. 
+			\vs
+			\textbf{\em The project is tested by Peer Testing under a controlled environment and encountered bugs and recommendations are kept under the light.}
+		\end{itemize}
+		\pagebreak
+		\section{System Security Measures}	
+		\vs
+		Some of the measures can be taken as follows:
+		\begin{itemize}
+			\item 
+			\textbf{\large Data Validation}
+			\vs
+			 Data validation checks have been performed on the client-side. However, if someone tries to send unvalidated data through raw HTTP requests, validations are also implemented on the server-side to prevent invalid data to be stored in the database.
+			 
+\vs
+\textbf{\small Client-Side Validation}
+\vs
+\begin{minted}[fontsize=\footnotesize, tabsize=2]{html}
+<v-form v-model="valid" ref="form">
+	<!-- Email -->
+	<v-text-field
+		label="Email"
+		name="email"
+		prepend-icon="mdi-email"
+		type="email"
+		hint="Your existing email" 
+		v-model="user.email"
+		maxlength="30"
+		counter="30"
+		clearable
+		:rules="emailRules" <!-- Validation Data -->
+	/>
+	...
+	<script>
+	...
+	emailRules: [(v) => /.+@.+/.test(v) || 'E-mail must be valid'], // Regex Validation
+	...
+\end{minted}
+\vs
+\textbf{\small Server-Side Validation}
+\vs
+\begin{minted}[fontsize=\footnotesize, tabsize=2]{js}
+/* Mongoose Validates Data Before Passing It To MongoDB */
+const schema = new mongooseClient.Schema( 
+{
+	displayName: { type: String, required: true },
+	email: {
+		type: String,
+		unique: true,
+		lowercase: true,
+		required: true,
+	},
+	password: { type: String, required: true },
+	...
+\end{minted}
+\item 
+\textbf{\large User Authentication}
+\vs
+\projectname\space implements a secure JWT token-based authentication which is an internet standard nowadays. The REST API is secured using tokens and only authenticated users with valid tokens can use the service.
+\vs
+\begin{minted}[fontsize=\footnotesize, tabsize=2]{bash}
+# Send Get Request To Server Without Authentication
+
+curl --location --request GET 'http://localhost:3030/uploads' \
+--data-raw ''
+
+#  Server Responds With Appropriate Error
+\end{minted}
+\begin{minted}[fontsize=\footnotesize, tabsize=2]{json}
+{
+	"name": "NotAuthenticated",
+	"message": "Invalid authentication information (no `strategy` set)",
+	"code": 401,
+	"className": "not-authenticated",
+	"errors": {}
+}
+\end{minted}
+\textbf{\small Performing Authentication}
+\begin{minted}[fontsize=\footnotesize, tabsize=2]{bash}
+# Send Login Credentials To The Server To Receive JWT
+
+curl --location --request POST 'http://localhost:3030/authentication' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+	"email": "ch3rag@gmail.com",
+	"password": "Abc@1234",
+	"strategy": "local"
+}'
+
+#  Server Responds With Appropriate Token And User Data
+\end{minted}
+\begin{minted}[fontsize=\footnotesize, tabsize=2]{json}
+{
+	"accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6ImFjY2VzcyJ9.eyJpYXQiOjE1OTg3MzAxNDYsImV4......",
+	"authentication": {
+		"strategy": "local"
+	},
+	"user": {
+		"_id": "5f47b03f044e28d938dd28e4",
+		"displayName": "Bharat Singh Rajput",
+		...
+	}
+}
+\end{minted}
+\textbf{\small Using Tokens For Authenticated Requests}
+\begin{minted}[fontsize=\footnotesize, tabsize=2]{bash}
+# Send Request To Server Along With JWT
+
+curl --location --request GET 'http://localhost:3030/uploads' \
+--header 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6ImFjY2VzcyJ9.eyJpYXQiOjE1OTg3...' \
+--data-raw ''
+
+#  Server Responds With Appropriate Data After Verification
+\end{minted}
+\begin{minted}[fontsize=\footnotesize, tabsize=2]{json}
+{
+	"total": 1,
+	"limit": 10,
+	"skip": 0,
+	"data": [
+		{
+			"_id": "5f47b0c8044e28d938dd28e5",
+			"description": "A Sample Video",
+			"originalName": "cartoon1080p.mp4",
+			...
+		}
+	],
+	...
+}
+\end{minted}
+\end{itemize}
+		\pagebreak
+		\section{Future Scope}
+\subsection{Limitations}
+Although utmost care has been taken to create a website which ensures proper working
+and is easy to use, yet the system faces some drawbacks which are:
+\begin{itemize}
+	\item Although many of the major video formats are supported by the system, there are many more out there which aren't supported by the system. This drawback is very tough to overcome as it is the limitation video conversion module itself.
+	
+	\item The video conversion is a very resource-heavy task and to scale the system, a lot of resources must be used at the server-side to serve a large number of users simultaneously.
+	
+	\item Unfortunately, the HTML5 player used to stream the videos only support limited types of video format. To keep the data homogeneous, the videos that are not mpeg4 are converted to mpeg4 at the time of upload. This enables video streaming no matter what is the format of the video. However, it also adds overhead to the server.
+\end{itemize}
+\subsection{Future Scope Of The Project}
+\begin{itemize}
+	\item The backend, being a REST API, can be integrated into any frontend and thus, opening a huge amount of possibilities such as creating a native iOS or Android app implementing cloud conversion service.
+	
+	\item The backend service itself can be used as a third party service in any other application implementing some sort of video conversion. For example, a video compression app on Android or iOS can use our REST API in the background to perform the conversion task.
+	
+	\item In the future, with appropriate resources, this system can be upgraded to a subscription-based service where users have to buy tokens for video conversion. Free plans can also be continued for small videos. An option for buying additional cloud storage can also be added.
+\end{itemize}
+		\pagebreak
+\section{Bibliography}
+\vs
+Following websites and documentations are referred to create this project: 
+\begin{itemize}
+	\item 
+	\textbf{Vue.js Docs} https://vuejs.org/v2/guide/
+	\item 
+	\textbf{Vuetify.js Docs} https://vuetifyjs.com/en/getting-started/quick-start/
+	\item
+	\textbf{feathers-vuex Docs} https://vuex.feathersjs.com/api-overview.html
+	\item
+	\textbf{node.js Docs} https://nodejs.org/en/docs/
+	\item
+	\textbf{express.js Docs} https://expressjs.com/en/api.html
+	\item
+	\textbf{feathers.js Docs} https://docs.feathersjs.com/api/
+	\item 
+	\textbf{fluent-ffmpeg Docs} https://github.com/fluent-ffmpeg/node-fluent-ffmpeg
+	\item 
+	\textbf{mongoose.js Docs} https://mongoosejs.com/docs/api.html
+	\item 
+	\textbf{mongoDB Docs} https://docs.mongodb.com/
+\end{itemize}
+		\pagebreak
+\section{Glossary}
+\begin{itemize}
+	\item \textbf{Activity}:  In system development life cycle- a group of logically related tasks that make it possible to
+	accomplish a specific objective; a group of related tasks.
+	\item \textbf{Analysis}:  Breaking a problem into successively manageable parts for individual study.
+	\item \textbf{Cost/Benefit analysis}:  The process of comparing projected savings and benefits to projected costs
+	to decide whether a system change is justified.
+	\item \textbf{Cost Estimation}:  Approximation of the cost of a program, project, or operation.
+	\item \textbf{Database}:  A store of integrated data capable of being directly addressed for multiple uses; it is
+	organized so that various files can be accessed through a single reference based on the relationship
+	among records in the file rather than the physical location.
+	\item \textbf{Data Dictionary}:  A set of information describing the contents, format, and structure of a database
+	and the relationship between its elements, used to control access to and manipulation of the
+	database.
+	\item \textbf{Database Management System (DBMS)}:  The software that determines how Data must be
+	structured to produce the user’s view; manages, stores, and retrieves data and enforces procedures.
+	\item \textbf{Data flow}:  Movement of data in a system from a point of origin to a specific destination – indicated
+	by a line and arrow.
+	\item \textbf{Data Flow Diagram (DFD)}:  Graphic representation of data movement, processes, and files (data
+	stores) used in support of an information system.
+	\item \textbf{Design}:  Process of developing the technical and operational specifications of a candidate system for
+	implementation.
+	\item \textbf{Documentation}:  A means of communication; a written record of a phase of a specific project; it
+	establishes design and performance criteria for phases of the project.
+	\item \textbf{Entity}:  Also called a data aggregate; something of interest to the user about which to collect or store
+	data; represents a number of data elements.
+	\item \textbf{Feasibility Study}:  A procedure that identifies, describes, and evaluates candidate systems and
+	selects the best system for the job.
+	\item \textbf{Implementation}:  In system development – a phase that focuses on user training, site preparation,
+	and file conversion for installing a candidate system.
+	\item \textbf{Information}:  A meaningful set of data that tells something about the data relationships. 
+	95
+	\item \textbf{Initial Investigation}:  An exploratory activity that determines whether a user request is valid and
+	feasible before a course of action is recommended.
+	\item \textbf{Interdependence}:  Dependence of a system’s components on one another for effective functioning.
+	\item \textbf{Invalid Data}:  Consists of problems, where the administrator tries to or accidentally fills the
+	incorrect data into the form fields, such as incorrect date, characters instead of numbers, etc.
+	\item \textbf{Maintenance}:  To keep the thing in its consistent and original condition.
+	\item \textbf{Model}:  A logical or mathematical representation of a system that encompasses features of interest
+	to the user.
+	\item \textbf{Modularity}:  In systems maintenance – a system is constructed in modular units of a limited size to
+	simplify maintenance when necessary; in software reliability – the ease with which a package can be
+	modified.
+	\item \textbf{Operating System}:  In data base – machine-based software that facilitates the availability of
+	information or reports through the DBMS.
+	\item \textbf{Organization}:  Implies structure and order; a procedure that determines how components must be
+	arranged to achieve objectives.
+	\item \textbf{Password}:  Identity authenticator; a key that allows access to a program, system, or procedure.
+	\item \textbf{Planning}:  Is studying a project course of action and determining what is to be done to meet stated
+	goals.
+	\item \textbf{Post-Implementation Review}:  Evaluation of a new system after it has been in operation to
+	determine its actual performance against expectations.
+	\item \textbf{Process}:  A procedure that transforms input into useful output; in a data flow diagram – indicated by
+	a bubble or a circle.
+	\item \textbf{Record}:  A collection of aggregates or related items of data treated as a unit.
+	\item \textbf{Relation}:  Two-dimensional table.
+	\item \textbf{Reliability}:  Dependability or level of confidence; in systems work - the need to gather dependable
+	information for use in making decisions about the system being studied.
+	\item \textbf{Security}:  The protection of data or hardware against accidental or intentional damage from a
+	defined threat.
+	\item \textbf{Source Code}:  A procedure or format that allows enhancements on a software package.
+	\item \textbf{System}:  A regular or orderly arrangement of components or parts in a connected and interrelated
+	series or whole; a series or group of components necessary to some operation.
+	\item \textbf{System Design}:  Detailed concentration on the technical and other specifications that will make the
+	new system operational. 
+	96
+	\item \textbf{System Development}:  The process of identifying the user’s needs and designing a system that
+	meets those needs through implementation.
+	\item \textbf{System Development Life Cycle}:  A structured sequence of phases for implementing an information
+	system.
+	\item \textbf{System Integrity}:  The proper functioning of hardware, programs, and physical security, and the
+	required degree of safety against eavesdropping and wiretapping.
+	\item \textbf{Systems Testing}:  Testing the whole system by the user after major programs and subsystems has
+	been tested.
+	\item \textbf{System Analysis}:  Reduction of an entire system by studying the various operations performed and
+	their relationships within the system; an examination of a business activity with a view to
+	identifying problem areas and recommending alternative solutions.
+	\item \textbf{Task}:  The smallest unit of work that is assigned to one person and controlled through a project
+	management routine.
+	\item \textbf{Unit Testing}:  Testing changes made in an existing or new program.
+	\item \textbf{Usability}:  A criterion in software selection – easy to operate and user-friendly.
+	\item \textbf{User Acceptance Test}:  A test that verifies for the user that the system’s procedures operate to
+	system specifications and the integrity of vital data is maintained.
+	\item \textbf{Validation}:  Checking the quality of software in both simulated and live environments.
+	\item \textbf{Variable}:  A measurable quantity that has a definite numerical value at every instant.
+	\item \textbf{Variable Cost}:  Cost that varies with the volume of processing or number of shifts per day; examples
+	are employee wages and costs of supplies and raw materials
+\end{itemize}

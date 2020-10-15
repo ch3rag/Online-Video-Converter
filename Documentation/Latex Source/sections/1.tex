@@ -1,0 +1,185 @@
+\section{Introduction}
+	The name of my project is \textbf{\projectname}.
+	\vs
+	As It’s name says, it is a media converter application for Videos.
+	It is a web application that can be accessed from any device having a modern operating system and capable of handling websites.
+	It offers a clean and easy to use user interface that facilitates users to convert their videos.
+	\vs
+	Users can login to their account, upload new videos which will be saved on the web application as long as they like and can convert, download and stream them on the fly.
+	\vs
+	This web application, thus work as a cloud storage for the videos and a conversion tool at the same time.
+	This application is also capable of streaming videos and therefore, users can also watch their videos when and wherever they want.
+	\vs	
+	\subsection{Abstract Of The Project}
+	\vs
+	There are many times when we have to change the attributes of a video such as its resolution, it’s format or compress it to decrease it’s size. There are specialized software built to perform this task but these software are platform dependent. Therefore, a conversion tool built for one operating system cannot work on the other operating system.
+	\vs
+	Keeping this drawback in mind, I have developed a web based solution to this problem. As we all know, when an application is a “web application”, it becomes platform agnostic. Since web can be accessed from any platform, therefore, this conversion tool can work on any platform that supports a modern web browser.
+	Apart from being a platform independent conversion tool, this web application also work as a cloud storage and as a streaming platform for videos.
+	\vs
+	\subsection{Objective Of The Project}
+	\vs
+	This project aims to provide a platform agnostic application for the users to convert their videos, store them in a secure manner, and get additional information regarding their videos, and stream then when and whereever they want \textbf{on any device} of their choice.
+	\vs
+	Since there are numerous formats and resolution available for the videos, this application aims to support uploading and conversion of most commonly used video formats such as .mp4, .avi, .flv and so on.
+	The applications aims to provide a user friendly UI that can be easily understood.
+	\subsubsection{Problems With Existing System}
+	\vs
+	\begin{itemize}
+		\item Video conversion tool are often in the form of binaries complied to their specific platforms and therefore, there is not a single tool that can be used accross all platforms.
+		\item Traditional video conversion solutions are often complex and hard to understand. Their user interface is full of an overwhelming amount of details and complexity.
+		\item Traditional video conversion does not provide any cloud storage for videos. They can only be used offline and therefore, on slow computers such as handheld devices, there is no effecting and time friendly tool to convert videos.
+		\item Traditional video conversion uses the client’s resources for video conversion.
+		\item Traditional video conversion does not provide any concept of streaming videos and cloud storage. 
+	\end{itemize}
+	\vs
+	\subsubsection{Proposed System}
+	\vs
+	\begin{itemize}
+		\item \projectname, being a web application, online media converter is platform agnostic. The same application can be used on any device whether it's a powerful computer or a handheld device such as a mobile phone.
+		
+		\item \projectname\space is easy to use and understand. The \textbf{{vuetify plugin}}\footnote{https://vuetifyjs.com/} used as a user interface provides a material design that is beautiful to look at, along with providing a smooth transition. The user interface is designed in such a way that the user can easily understand the application. Necessary tooltips are also provided wherever they are needed.
+		\item \projectname\space does provide cloud storage for videos and therefore, the videos once uploaded will be available to the user whenever they want. 
+		\item \projectname\space uses the server’s resources for video conversion and therefore, videos are converted quicly using a powerful server-side computer. Using this approach even large videos can be converted within minutes even on a small handheld device.
+		\item \projectname\space also provides the facility of streaming service which enables the users to watch their videos once they are uploaded to the server.
+	\end{itemize}
+	\vs
+	\subsection{Scope Of The Project}
+	\vs
+	\projectname\space is designed for the particular need of the company to carry out operations smoothly and effectively and will prove itself to be a powerful tool for users to convert their videos with ease. The project aims to be a platform-agnostic solution for users to convert, store, and stream their videos.
+	\vs
+	\begin{itemize}
+		\item The system aims to major video formats such as *.mp4, *.avi, *.mov, *.flv, and so on.
+		\item The system aims to shift the load of video conversion from the client to the server.
+		\item The system aims to be easy to operate.
+		\item The system aims to satisfy the user requirement. 
+		\item The system aims to be delivered on schedule within the budget.
+		\item The system aims to usable on any platform and on the most common screen sizes.
+	\end{itemize}
+	\pagebreak
+	\subsection{Modules Of The Project}
+		\subsubsection{Server Side Modules}
+		\vs
+		\begin{itemize}
+			
+			\item
+			\large\textbf{Users}
+			
+			\hspace{2cm}The user's module on the server-side is REST\footnote{Representational State Transfer - https://en.wikipedia.org/wiki/Representational\_state\_transfer} API\footnote{Application Programming Interface - https://en.wikipedia.org/wiki/API} that provides services for the frontend application to perform CRUD operations on the user's {\em collection\footnote{https://docs.mongodb.com/manual/core/databases-and-collections/}}. The modules support HTTP operations to POST, PATCH, and GET the data from the user's collection. However,  DELETE requests are blocked, therefore, the frontend application cannot delete the user's account, and also all requests are only restricted to the current user therefore, users can't access the details or search other users on the server.
+			\vs
+			\item
+			\large\textbf{Uploads}
+			
+			\hspace{2cm}Uploads are videos that users upload on the server. The uploads' module on the server-side is a REST API that provides services for the frontend application to perform CRUD operations on the user's upload collection. The modules support HTTP operations to POST, GET, and DELETE data from the uploads' collection. However,  PATCH requests are blocked, therefore, the frontend application cannot make changes to video information once they are uploaded on the server, and also all requests are only restricted to the current user therefore, users can't access the uploads of other users on the server.
+			\vs	
+			\item
+			\large\textbf{Convert}
+			
+			\hspace{2cm}Convert are videos that users convert on the server using their original uploads. The converted videos are also available on the server as long as the users want. The 'convert' module on the server-side is a REST API that provides services for the frontend application to perform CRUD operations on the covert collection and also to request server to perform conversion. The modules support HTTP operations to POST, GET, and DELETE data from the convert collection. However,  PATCH requests are blocked, therefore, the frontend application cannot make changes to converted video information once they are converted by the server, and also all requests are only restricted to the current user and therefore, users can't access the converted videos of other users on the server.
+			\vfill
+			\pagebreak
+			\item
+			\large\textbf{Streams}
+			
+			\hspace{2cm}Streams service allows users to stream their uploaded videos. It does not support any database operations. The 'stream' module on the server-side is a REST API that provides services for the frontend application to perform GET operation on video files uploaded by the user. The modules support only HTTP GET requests to fetch video streaming data from the server. This data is then processed by the frontend application and played using video player of their choice.
+			\vs		
+			\item
+			\large\textbf{Thumbs}
+			
+			\hspace{2cm}
+			Thumbs service allows users to request thumbnails of their uploaded videos. The thumbnails provide visual assistance when the user is trimming a video. It does not support any database operations. The 'thumbs' module on the server-side is a REST API that provides services for the frontend application to perform GET operation on thumbnail files generated by the server when users upload their videos. The modules support only HTTP GET requests to fetch thumbnail data from the server. This data is then processed by the frontend application and displayed as a reference image to the user.
+			\vs		
+			
+			\item
+			\large\textbf{AuthManagement}
+			
+			\hspace{2cm}
+			AuthManagement service manages the e-mails sent to the user. 
+			When ever the user registers on the web application, a confirmation email is sent to the user. 
+			And also if the user forgets his/her password or if he/she wants to change his/her password, a password reset e-mail is sent to the user to confirm his/her identity. 
+			All these operations are managed by the 'authmanagement' service. It does not support any database operations but it does add tokens to the user's collection in the background. 
+			The 'authmanagement' module on the server-side is a REST API that provides services for the frontend application to perform POST operations for various activities such as confirm registration,request password change e-mail, and change user's password. The modules support only HTTP POST requests.
+			\vs
+			
+			\item
+			\large\textbf{Authentication}
+			
+			\hspace{2cm}
+			The Authentication module manages the authentication of the user. It uses token-based authentication i.e., JWT\footnote{https://en.wikipedia.org/wiki/JSON\_Web\_Token}
+			(JSON Web Tokens) to authenticate users before they use any services. It also acts as a session management service. The 'authentication' module on the server-side is a REST API  provides services for the frontend application to perform HTTP operations such as POST and DELETE to create token when logging in, get token after successful login, and delete token when users are logging out.
+		\end{itemize}
+		\vs
+		\subsubsection{Client-Side Modules}
+				\vs
+		\begin{itemize}
+			
+			\item
+			\large\textbf{App.vue}
+			
+			\hspace{2cm}
+			App.vue is a container module for all other modules. It contains a header, navigation bar, footer, side-panel to quickly jump from one page to another.
+			\vs
+			\item
+			\large\textbf{Login.vue}
+			
+			\hspace{2cm}
+			Login.vue is a frontend module that manages user login. It provides a user interface for the user to perform operations such as logging in and request password change e-mail in case he forgets his/her password.
+			\vs
+			\item
+			\large\textbf{SignUp.vue}
+			
+			\hspace{2cm}
+			SignUp.vue is a frontend module that manages user sign up. It provides a user interface for the user to perform sign up operation. It validates all the data before sign up.
+			\vs
+			\item
+			\large\textbf{Account.vue}
+			
+			\hspace{2cm}
+			Account.vue is a frontend module that manages the user's information. It provides a user interface for the user to perform changes in his information and requests a password e-mail. It validates all the data before changing it. Users can also view their profiles using this module.
+			\vs
+			\item
+			\large\textbf{Videos.vue}
+			
+			\hspace{2cm}
+			Videos.vue is the main module. It is a frontend module that manages user's videos and it's conversion. It provides a user interface for the user to perform operations such as:
+			\begin{itemize}
+				\item Upload a new video.
+				\item Stream a uploaded video and directly play it on the browser.
+				\item View information about the uploaded video such as it's resolution, frame rate, bitrate, size and so on.
+				\item Open the conversion dialog in order to perform conversion.
+				\item Delete a uploaded video.
+				\item Search a uploaded video by date or a search string or both.
+				\item Change the view to either List View or Card View.
+				\item
+				\textbf{Video Conversion Dialog}
+				
+				\hspace{2cm}
+				This dialog provides various parameters to tweak when a user is performing the conversion. These parameters include file format, video quality, trim duration, and so on. Users can initiate conversion using this dialog.
+			\end{itemize}
+			\vs
+			\item
+			\large\textbf{ConversionHistory.vue}
+			
+			\hspace{2cm}
+			ConversionHistory.vue is also one of the main module. It is a frontend module that manages user's already converted videos. It provides a user interface for the user to perform operations such as:
+			\begin{itemize}
+				\item List all converted videos.
+				\item Download a converted video.
+				\item View information about the uploaded video such as it's resolution, frame rate, bitrate, size and so on.
+				\item Delete a converted video.
+				\item Search a uploaded video by date or a search string or both.
+				\item Change the view to either List View or Card View.
+			\end{itemize}
+			\vs
+			\item
+			\large\textbf{Reset.vue}
+			
+			\hspace{2cm}
+			Reset.vue is a frontend module that provides a user interface for the user to change their password.  It validates the password before changing it.
+			\vs
+			\item
+			\large\textbf{Verify.vue}
+			
+			\hspace{2cm}
+			Reset.vue is a frontend module that verifies user's e-mail after their signup. It is only useful for unverified users.
+		\end{itemize}
